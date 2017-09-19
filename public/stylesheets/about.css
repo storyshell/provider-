@@ -1,0 +1,139 @@
+body { font-family: Arial, Helvetica, sans-serif; 
+	background-color: #ebe8e8;
+ }
+
+ body, div, h1, h2, h3, h4, h5, h6, p, ul, img {
+	margin: 0px; 
+	padding: 0px; 
+}
+
+.bar{
+	background-color: black;
+	height: 5px;
+}
+#header{
+	background-color: #00BFFF;
+	height: auto;
+	overflow: hidden;
+}
+
+.main {
+	background-color: #ebe8e8;
+    margin: 0 auto;
+}
+
+.logo {
+	float: left;
+	padding-left: 30px;
+	padding-top: 10px;
+}
+
+.tagline {
+	float: left;
+	padding-top: 30px;
+	margin-left: 155px;
+}
+
+.tagline h3 {
+	font-size: 30px;
+	color: black;
+}
+
+.class {
+	clear: both;
+}
+
+
+.nav{
+	background-color: grey;
+	margin-top:2px;
+	height: auto;
+	overflow: hidden;
+}
+
+.nav ul#menu{
+	padding-left:400px;
+	list-style: none;
+}
+
+ul#menu li a{
+    font-size: 25px;
+	color: #fff;
+	text-decoration: none;
+}
+
+ul#menu li{ 
+	float: left;
+	padding-right: 70px;
+}
+
+.content {
+	height: auto;
+	overflow: hidden;
+	margin-bottom: 40px;
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.about{
+	 height: auto;
+	 margin: 0 auto;
+	 margin-top: 10px;
+	 overflow: hidden;
+	 width: 800px;
+}
+
+.about .data {
+	margin: 5px;
+	width: 100%;
+	height: auto;
+}
+
+.about .data h2{
+	font-weight: normal;
+	font-size: 34px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.about .data h3{
+	font-weight: normal;
+	font-size: 24px;
+	padding-bottom: 5px;
+	text-align: center;
+}
+
+.about .data p {
+	font-weight: normal;
+	font-size: 16px;
+    padding-bottom: 20px;
+}
+
+.about .information {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.information .container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+   height: 150px;
+   padding: 5px;
+   border: 1px solid black;
+   border-radius: 4px;
+}
+
+.footer{
+	margin-top: 10px;
+	background-color: black;
+}
+
+.footer p{
+	padding-top: 10px;
+	text-align: center;
+	font-size: 12px;
+	color: #fff;
+}
