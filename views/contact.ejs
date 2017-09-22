@@ -4,6 +4,10 @@
       <title>Provider</title>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="stylesheet" type="text/css" href="stylesheets/contact.css"/> 
+      <link rel="shortcut icon" href="https://www.webdesignerdepot.com/favicon.ico">
+      <script src="/socket.io/socket.io.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <link rel="icon" href="https://www.webdesignerdepot.com/favicon.ico"> 
   </head> <!-- end of head -->
   <body>
   	<div class="main">
@@ -17,7 +21,7 @@
   			</div>
   			<div class="clear"></div>
   	   </div> <!-- end of header -->
-
+      
   	   <div class="nav">
   	   	<ul id="menu">
   	   		<li><a href="/product">Product</a></li>
@@ -27,7 +31,7 @@
   	   	</ul>
   	   	<div class="clear"></div>
   	   </div>  <!-- end of nav tag -->
-      
+    
        <div class="container">
          <form action="/subscribe" method="POST" enctype="multipart">
 

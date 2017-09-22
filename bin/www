@@ -5,6 +5,7 @@
  */
 
 var app = require('../app');
+var daoMethods = require('../routes/dbpoll');
 var debug = require('debug')('provider:server');
 var http = require('http');
 
@@ -20,6 +21,7 @@ app.set('port', port);
  */
 
 var server = http.createServer(app);
+var io = require('socket.io').listen(server);
 
 /**
  * Listen on provided port, on all network interfaces.
@@ -88,3 +90,18 @@ function onListening() {
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
 }
+
+
+/*Socket io problem for the connecting to the comment section in real time so that it looks wonderful*/
+io.on('connection',function(socket){
+   socket.on('status_added',function(data){
+      daoMethods.saveComments(data.id,data.message,function(res){
+          if(res){
+            io.emit('refresh feed', data.message);
+          }
+          else{
+            io.emit('error');
+          }
+      });
+   });
+});
