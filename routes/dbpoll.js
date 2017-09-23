@@ -13,10 +13,10 @@ var connection = mysql.createConnection({
 /*creating a pool connnection of database*/
 var pool = mysql.createPool({
 	connectionLimit : 100,
-    host : 'localhost',
-    user : 'root',
-    password : 'raja',
-    database : 'socialblog',
+    host : 'us-cdbr-iron-east-05.cleardb.net',
+    user : 'b5837b0f1d3d06',
+    password : '9d9ae3d5',
+    database : 'heroku_db89e2842543609',
     debug : 'false'
 });
 
